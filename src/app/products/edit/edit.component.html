@@ -1,0 +1,72 @@
+<!-- <p>edit works!</p> -->
+
+<div class="container w-75 bg-body-secondary mt-5 mb-5 p-5" style="text-align: center;">
+  <form  class="row g-3">
+      <h4 class="fs-5 fw-3 text-center text-secondary">Edit Product</h4>
+      <div class="col-md-6">
+        <label for="pname" class="form-label">Product Name</label>
+        <input [(ngModel)]="pdata.productName" name="pname"   type="text" class="form-control" id="pname">
+       
+      </div>
+      <div class="col-md-6">
+        <label for="price" class="form-label">Price</label>
+        <input [(ngModel)]="pdata.price"  name="price" type="text" class="form-control" id="price">
+        
+      </div>
+      <div class="col-12">
+        <label for="Description" class="form-label">Description</label>
+        <input [(ngModel)]="pdata.description"  name="description" type="text" class="form-control" id="Description">
+       
+      </div>
+      <div class="col-12">
+          <label class="form-label" for="imgFile"> Image</label>
+          <input [(ngModel)]="pdata.image" name="img"  class="form-control" id="imgFile" />
+         
+      </div>
+      <div class="col-md-6">
+        <label for="inputState" class="form-label">Vendor Name</label>
+        <input  [(ngModel)]="pdata.vendorName" name="vname"  class="form-control" id="vname">
+     
+      
+      </div>
+        <div class="col-md-6">
+          <label for="inputState" class="form-label">Category</label>
+          <input [(ngModel)]="pdata.categoryId" name="catid"  class="form-control" id="catid">
+         
+        
+        </div>
+        <div class="col-md-3">
+          <label for="available" class="form-label">Status</label>
+          <input [(ngModel)]="pdata.is_available"  type="text" name="available"  class="form-control" id="available">
+          
+         
+        </div>
+        <!-- <div class="col-md-2">
+          <label for="Review" class="form-label">Product Id</label>
+          <input name="proid"  class="form-control" id="proid">
+          
+         
+        </div> -->
+      <div class="col-md-3">
+        <label for="rating"  class="form-label">Rating</label>
+        <input [(ngModel)]="pdata.rating" name="rate"  class="form-control" id="rate">
+     
+      
+      </div>
+      <div class="col-md-3">
+        <label for="Review" class="form-label">Review</label>
+        <input [(ngModel)]="pdata.review" name="review" class="form-control" id="review">
+       
+      
+      </div>
+      <div class="col-md-3">
+          <label for="Review" class="form-label">Warranty</label>
+          <input [(ngModel)]="pdata.warranty" name="warnty" id="warnty" class="form-control">
+          
+        
+        </div>
+      <div class="col-12 text-center">
+        <button (click)="update()" type="submit" class="btn btn-outline-danger">Update</button>
+      </div>
+    </form>
+</div>
